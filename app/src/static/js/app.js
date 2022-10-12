@@ -53,7 +53,8 @@ function TodoListCard() {
         <React.Fragment>
             <AddItemForm onNewItem={onNewItem} />
             {items.length === 0 && (
-                <p className="text-center">No items yet! Add one above!</p>
+                alert("LIST IS EMPTY")
+                
             )}
             {items.map(item => (
                 <ItemDisplay
@@ -96,13 +97,13 @@ function AddItemForm({ onNewItem }) {
                     value={newItem}
                     onChange={e => setNewItem(e.target.value)}
                     type="text"
-                    placeholder="New Item"
+                    placeholder="Add to the list"
                     aria-describedby="basic-addon1"
                 />
                 <InputGroup.Append>
                     <Button
                         type="submit"
-                        variant="success"
+                        variant="secondary"
                         disabled={!newItem.length}
                         className={submitting ? 'disabled' : ''}
                     >
@@ -168,7 +169,7 @@ function ItemDisplay({ item, onItemUpdate, onItemRemoval }) {
                         onClick={removeItem}
                         aria-label="Remove Item"
                     >
-                        <i className="fa fa-trash text-danger" />
+                        <i className="fa fa-ban text-danger" />
                     </Button>
                 </Col>
             </Row>

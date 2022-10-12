@@ -53,7 +53,7 @@ function TodoListCard() {
         <React.Fragment>
             <AddItemForm onNewItem={onNewItem} />
             {items.length === 0 && (
-                alert("LIST IS EMPTY")
+                <div class="alert alert-info" role="alert">The list is empty 😲</div>
                 
             )}
             {items.map(item => (

@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 body {
-    background-color: #7ca9db;
+    background-image: url("../bg.gif");
     margin-top: 50px;
     font-family: 'Lato';
 }
@@ -14,10 +15,20 @@ body {
     transition: all .2s ease-in-out;
 }
 
+.git{
+    text-align: center;
+    margin-top: 60px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 110px;
+}
+
 .my-title{
     text-align: center;
     margin: auto;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
+    font-family: 'Courgette', cursive;
 }
 
 .item:hover {

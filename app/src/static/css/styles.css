@@ -15,6 +15,10 @@ body {
     transition: all .2s ease-in-out;
 }
 
+.fa{
+    font-size: 18px;
+}
+
 .git{
     text-align: center;
     margin-top: 60px;
@@ -32,7 +36,7 @@ body {
 }
 
 .item:hover {
-    box-shadow: 0 0 1em rgb(200, 220, 172);
+    box-shadow: 0 0 1em rgba(159, 205, 255, 0.612);
 }
 
 .item.completed {

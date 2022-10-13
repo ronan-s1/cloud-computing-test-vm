@@ -57,6 +57,11 @@ function TodoListCard() {
                 <div class="alert alert-info" role="alert">The list is empty 😲</div>
                 
             )}
+
+            {items.length > 0 && (
+                <div class="alert alert-primary" role="alert">{ items.length } things to do!</div>
+                
+            )}
             {items.map(item => (
                 <ItemDisplay
                     item={item}

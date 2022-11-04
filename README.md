@@ -12,7 +12,7 @@ http://40.81.130.17/
 
 # lab 3 db connection
 ```
-docker run -dp 3000:3000 \
+docker run -dp 80:3000 \
   -w /app -v "$(pwd):/app" \
   --network todo-app \
   -e MYSQL_HOST=mysql \

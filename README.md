@@ -23,4 +23,14 @@ docker run -dp 80:3000 \
   sh -c "yarn install && yarn run dev"
  
 docker exec -it 54b4d266eef0 mysql -p todos
+
+PS> docker run -dp 80:3000 `
+   -w /app -v "$(pwd):/app" `
+   --network todo-app `
+   -e MYSQL_HOST=mysql `
+   -e MYSQL_USER=root `
+   -e MYSQL_PASSWORD=secret `
+   -e MYSQL_DB=todos `
+   node:12-alpine `
+   sh -c "yarn install && yarn run dev"
 ```
